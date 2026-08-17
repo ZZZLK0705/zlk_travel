@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f7f3ec">
+<title>香港之旅 · 2026.08.25—08.31</title>
+<style>
+:root{
+ --paper:#f7f3ec;--ink:#25231f;--sub:#746f67;--line:#ddd6ca;
+ --red:#a8473b;--blue:#315b67;--green:#5c725e;--gold:#b08a52;
+ --white:#fffdf9;--shadow:0 8px 28px rgba(56,48,38,.07);
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.72}
+.page{max-width:900px;margin:auto;padding:18px 18px 60px}
+.cover{min-height:68vh;display:flex;flex-direction:column;justify-content:space-between;padding:30px 4px 28px}
+.kicker{font-size:12px;letter-spacing:.22em;color:var(--red);font-weight:700}
+.cover h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(44px,10vw,82px);font-weight:500;line-height:.98;margin:18px 0 22px;letter-spacing:-.04em}
+.cover .lead{font-size:18px;max-width:650px;color:#4e4a44}
+.cover .meta{display:flex;gap:20px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:18px;font-size:13px;color:var(--sub)}
+nav{position:sticky;top:0;z-index:5;background:rgba(247,243,236,.93);backdrop-filter:blur(12px);border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:auto;white-space:nowrap;margin:0 -18px;padding:10px 18px}
+nav a{color:var(--ink);text-decoration:none;font-size:13px;margin-right:18px}
+section{margin-top:55px}
+.section-title{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:18px}
+.section-title span{font-size:12px;color:var(--red);font-weight:800;letter-spacing:.12em}.section-title h2{font-size:26px;margin:0;font-weight:650}
+.intro{font-size:15px;color:#57524b;max-width:760px}
+.card{background:var(--white);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:4px}
+.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.principles .card{padding:17px}.principles b{display:block;font-size:16px;margin-bottom:5px}.principles p{margin:0;font-size:13px;color:var(--sub)}
+.day{margin:26px 0;overflow:hidden}
+.day-head{padding:20px 20px 16px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:78px 1fr;gap:16px}
+.day-num{font-family:Georgia,serif;font-size:36px;line-height:1;color:var(--red)}.day-num small{display:block;font-family:inherit;font-size:12px;color:var(--sub);margin-top:5px;letter-spacing:.08em}
+.day-title h3{margin:0;font-size:22px}.day-title .mood{font-size:13px;color:var(--sub)}
+.route{padding:12px 20px;background:#f1eee7;border-bottom:1px solid var(--line);font-size:14px;font-weight:600;color:var(--blue)}
+.route b{color:var(--red)}
+.day-body{padding:0 20px 18px}
+.row{display:grid;grid-template-columns:82px 1fr 112px;gap:12px;padding:13px 0;border-bottom:1px dashed #d8d0c3;align-items:start}
+.row:last-child{border-bottom:0}.time{font-size:13px;color:var(--red);font-weight:750}.act{font-size:14px}.cost{text-align:right;font-size:13px;color:var(--blue);font-variant-numeric:tabular-nums}
+.cost em{display:block;font-style:normal;color:var(--sub);font-size:11px}
+.meal{margin-top:13px;padding:13px 14px;border-left:3px solid var(--gold);background:#fbf7ef;font-size:13px}
+.meal b{color:#8b672f}.why{font-size:12px;color:var(--sub);margin-top:5px}
+.day-total{display:flex;justify-content:space-between;align-items:center;padding:13px 20px;background:#f0ece4;font-size:13px}.day-total strong{font-size:17px;color:var(--red)}
+.route-map{padding:17px 20px;border-top:1px solid var(--line);background:#fffaf3}
+.route-line{display:flex;align-items:center;overflow:auto;padding:3px 0 7px}
+.stop{min-width:max-content;text-align:center}.dot{width:11px;height:11px;background:var(--blue);border-radius:50%;margin:auto;border:2px solid #d7e0e2}
+.stop.main .dot{background:var(--red);border-color:#efd0cb}.stop small{display:block;margin-top:6px;font-size:11px;color:var(--sub)}
+.arrow{width:34px;height:1px;background:#b9b1a4;flex:0 0 34px;margin:0 7px;position:relative}.arrow:after{content:"›";position:absolute;right:-2px;top:-11px;color:#b9b1a4}
+.route-note{font-size:11px;color:var(--sub);margin-top:6px}
+.food-table{width:100%;border-collapse:collapse;background:var(--white);border:1px solid var(--line);font-size:13px}
+.food-table th,.food-table td{padding:11px 12px;border-bottom:1px solid var(--line);text-align:left}.food-table th{background:#f0ece4;font-size:12px}.food-table tr:last-child td{border-bottom:0}
+.priority{font-weight:700;color:var(--red)}.home{color:var(--green);font-weight:700}
+.budget{display:grid;grid-template-columns:1.2fr .8fr;gap:14px}.budget .card{padding:18px}
+.big{font-family:Georgia,serif;font-size:36px;color:var(--red);line-height:1.1;margin:8px 0}.sub{color:var(--sub);font-size:12px}
+.bar{height:10px;background:#e6e0d6;border-radius:99px;overflow:hidden;margin:8px 0 13px}.bar i{display:block;height:100%;background:var(--blue)}
+.budget-list div{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dashed var(--line);font-size:13px}.budget-list div:last-child{border:0}
+.note{padding:15px 16px;background:#eef3f1;border-left:3px solid var(--blue);font-size:13px;margin:14px 0}
+.warn{background:#fbefe9;border-left-color:var(--red)}
+details{border-top:1px solid var(--line);padding:12px 0}summary{cursor:pointer;font-weight:650}
+.footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);color:var(--sub);font-size:11px}
+@media(max-width:680px){
+ .page{padding:12px 14px 50px}.cover{min-height:62vh}.principles,.budget{grid-template-columns:1fr}
+ .day-head{grid-template-columns:62px 1fr;padding:17px}.day-num{font-size:31px}.day-title h3{font-size:19px}
+ .day-body{padding:0 16px 14px}.row{grid-template-columns:62px 1fr;gap:8px}.cost{grid-column:2;text-align:left;margin-top:-5px}
+ .route,.route-map,.day-total{padding-left:16px;padding-right:16px}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="cover">
+<div>
+<div class="kicker">HONG KONG · 2026</div>
+<h1>香港之旅</h1>
+<p class="lead">2026.08.25 — 08.31　｜ 旅行安排</p>
+</div>
+<div class="meta">
+<span>8.25 Tue → 8.31 Mon</span><span>住宿：家</span><span>8.31 转深圳</span><span>四人公共预算：约 HK$5,000–6,500</span>
+</div>
+</header>
+
+<nav>
+<a href="#plan">总览</a><a href="#days">每天</a><a href="#food">吃什么</a><a href="#budget">预算</a><a href="#rules">现场原则</a>
+</nav>
+
+<section id="plan">
+<div class="section-title"><span>01</span><h2>旅行骨架</h2></div>
+<p class="intro">住在家最大的优势，是每天都可以回家。早餐和部分晚饭在家解决；累了就回去；真正值得花钱的饭再吃。下面所有费用都是<strong>四人家庭的规划价</strong>，不是把四个人每天都按网红餐厅计算。</p>
+<div class="principles">
+<div class="card"><b>26｜香港经典</b><p>太平山、龙虎山、中环、摩天轮、天星小轮、星光大道。一条线走到底。</p></div>
+<div class="card"><b>27｜九龙旧城</b><p>黄大仙、南莲园池、志莲净苑 → 朗豪坊 → 旺角、太子。和26日完全换场。</p></div>
+<div class="card"><b>28｜买东西</b><p>铜锣湾正式购物：MUJI、ASICS、DONKI；晚上跑马地。但本次日期没有现场赛马。</p></div>
+<div class="card"><b>29｜文化</b><p>香港故宫＋西九海滨。节奏放慢，晚上可以回家吃 FreshFarm 牛排。</p></div>
+<div class="card"><b>30｜南区</b><p>赤柱只做半日，不再塞西贡/长洲/南丫岛，避免“海边重复”。</p></div>
+<div class="card"><b>25 / 31｜留白</b><p>抵达日和转场日不安排硬景点；留给家、采购和临时发现。</p></div>
+</div>
+</section>
+
+<section id="days">
+<div class="section-title"><span>02</span><h2>每天怎么走</h2></div>
+
+<article class="card day">
+<div class="day-head"><div class="day-num">25<small>TUE · AUG</small></div><div class="day-title"><h3>抵达｜港大 · 坚尼地城</h3><div class="mood">第一晚不要累，先把“住在香港”建立起来。</div></div></div>
+<div class="route"><b>路线</b> 高铁 → 香港 → 家 → 家 → 坚尼地城海滨 → 家</div>
+<div class="route-map"><div class="route-line"><div class="stop main"><div class="dot"></div><small>家</small></div><div class="arrow"></div><div class="stop"><div class="dot"></div><small>家</small></div><div class="arrow"></div><div class="stop main"><div class="dot"></div><small>坚尼地城</small></div><div class="arrow"></div><div class="stop"><div class="dot"></div><small>家</small></div></div></div>
+<div class="day-body">
+<div class="row"><div class="time">约17:00</div><div class="act">回到租住处，入住、放行李、喝水、简单整理。</div><div class="cost">—<em>住宿已解决</em></div></div>
+<div class="row"><div class="time">18:00</div><div class="act">家附近随便走走，熟悉便利店、超市和日常生活路线。</div><div class="cost">HK$0–80<em>视采购</em></div></div>
+<div class="row"><div class="time">19:00</div><div class="act">坚尼地城海滨散步；不追日落时间，舒服就停。</div><div class="cost">HK$30–60<em>交通四人</em></div></div>
+<div class="row"><div class="time">晚饭</div><div class="act">优先安排<strong>初遇台湾菜</strong>：它在西湾河太安楼，若大家到达后不想跑远，则改为家附近简单吃。</div><div class="cost">HK$350–500<em>四人规划</em></div></div>
+<div class="meal"><b>今日吃：</b>初遇台湾菜（重点）／家里简单吃（备选）。<br><span class="why">乌醋猪软骨好吃 </span></div>
+</div>
+<div class="day-total"><span>预计公共支出</span><strong>HK$380–640</strong></div>
+</article>
+
+<article class="card day">
+<div class="day-head"><div class="day-num">26<small>WED · AUG</small></div><div class="day-title"><h3>山城＋维港｜太平山 · 龙虎山 · 中环 · 天星</h3><div class="mood">全程最“香港”的一天；天气好才做完整户外。</div></div></div>
+<div class="route"><b>路线</b> 家 → 中环 → 太平山 → 龙虎山（短线）→ 中环 → 摩天轮 → 天星小轮 → 尖沙咀 → 星光大道</div>
+<div class="route-map"><div class="route-line"><div class="stop main"><div class="dot"></div><small>家</small></div><div class="arrow"></div><div class="stop main"><div class="dot"></div><small>太平山</small></div><div class="arrow"></div><div class="stop"><div class="dot"></div><small>中环</small></div><div class="arrow"></div><div class="stop main"><div class="dot"></div><small>天星</small></div><div class="arrow"></div><div class="stop main"><div class="dot"></div><small>尖沙咀</small></div></div></div>
+<div class="day-body">
+<div class="row"><div class="time">10:00</div><div class="act">家里早餐。水、伞、防晒全部带齐。</div><div class="cost">HK$0–80<em>家中</em></div></div>
+<div class="row"><div class="time">11:30</div><div class="act">家里出发上山。优先看天气；若雷雨，龙虎山直接取消。</div><div class="cost">HK$60–180<em>四人交通</em></div></div>
+<div class="row"><div class="time">12:30–16:00</div><div class="act">太平山＋视体力走龙虎山/卢吉道短段。不要为了“完整徒步”牺牲后半天。</div><div class="cost">HK$0–350<em>按是否购票/交通</em></div></div>
+<div class="row"><div class="time">16:30</div><div class="act">下山到中环，找地方坐下来。之后中环摩天轮。</div><div class="cost">HK$40–120<em>四人</em></div></div>
+<div class="row"><div class="time">日落后</div><div class="act">中环天星码头 → 天星小轮 → 尖沙咀 → 星光大道。</div><div class="cost">HK$30–60<em>四人渡海</em></div></div>
+<div class="row"><div class="time">晚饭</div><div class="act">尖沙咀解决；<strong>蛋挞</strong>作为今日甜品任务。若想买 DONKI，可顺手，不把它变成专门行程。</div><div class="cost">HK$380–550<em>四人</em></div></div>
+<div class="meal"><b>今日吃：</b>蛋挞 ★★★★★；鸡蛋仔 ★★★★。早餐在家，晚餐正常吃，避免景点日吃得太重。</div>
+</div>
+<div class="day-total"><span>预计公共支出</span><strong>HK$510–1,340</strong></div>
+</article>
+
+<article class="card day">
+<div class="day-head"><div class="day-num">27<small>THU · AUG</small></div><div class="day-title"><h3>九龙旧城｜黄大仙 · 钻石山 · 油尖旺</h3><div class="mood">传统香港 → 唐风园林 → 现代旺角 → 港乐与街区。</div></div></div>
+<div class="route"><b>路线</b> 家 → 黄大仙祠 → 南莲园池＋志莲净苑 → 朗豪坊 → 旺角 → 太子 → CD / 书店 → 家</div>
+<div class="route-map"><div class="route-line"><div class="stop main"><div class="dot"></div><small>黄大仙</small></div><div class="arrow"></div><div class="stop"><div class="dot"></div><small>钻石山</small></div><div class="arrow"></div><div class="stop main"><div class="dot"></div><small>朗豪坊</small></div><div class="arrow"></div><div class="stop"><div class="dot"></div><small>旺角</small></div><div class="arrow"></div><div class="stop main"><div class="dot"></div><small>太子</small></div></div></div>
+<div class="day-body">
+<div class="row"><div class="time">09:30</div><div class="act">家里早餐后出门。</div><div class="cost">HK$0–80<em>家中</em></div></div>
+<div class="row"><div class="time">10:15–11:30</div><div class="act">黄大仙祠。看庙宇、香火和香港民间信仰，不必久留。</div><div class="cost">HK$0<em>主要支出交通</em></div></div>
+<div class="row"><div class="time">11:45–13:15</div><div class="act">南莲园池＋志莲净苑。若天气炎热，园林段缩短。</div><div class="cost">HK$0<em>免费</em></div></div>
+<div class="row"><div class="time">13:30</div><div class="act">午饭：九龙本地简餐。</div><div class="cost">HK$220–320<em>四人</em></div></div>
+<div class="row"><div class="time">14:30–17:30</div><div class="act">朗豪坊＋旺角街区。朗豪坊是节点，不在商场里耗掉整天。</div><div class="cost">HK$0–100<em>不含购物</em></div></div>
+<div class="row"><div class="time">17:30–20:30</div><div class="act">太子：CD店、书店、街区。这里是“港风”兴趣最适合发挥的一晚。</div><div class="cost">HK$100–250<em>交通/小吃</em></div></div>
+<div class="row"><div class="time">晚饭/甜品</div><div class="act"><strong>车仔面</strong>＋鸡蛋仔；女朋友甜品三选一：焦糖炖蛋泡芙／豆浆冰淇淋／蛋挞。</div><div class="cost">HK$300–500<em>四人</em></div></div>
+<div class="meal"><b>今日吃：</b>车仔面 ★★★★★；甜品集中完成。叻沙暂不为了它专门绕回上环，留作机动。</div>
+</div>
+<div class="day-total"><span>预计公共支出</span><strong>HK$620–1,250</strong></div>
+</article>
+
+<article class="card day">
+<div class="day-head"><div class="day-num">28<small>FRI · AUG</small></div><div class="day-title"><h3>铜锣湾购物｜MUJI · ASICS · DONKI</h3><div class="mood">购物为主，附近街区自由安排。</div></div></div>
+<div class="route"><b>路线</b> 家 → 叮叮车 → 铜锣湾 → MUJI / ASICS / 商场 → DONKI → 铜锣湾附近</div>
+<div class="route-map"><div class="route-line"><div class="stop main"><div class="dot"></div><small>家</small></div><div class="arrow"></div><div class="stop main"><div class="dot"></div><small>铜锣湾</small></div><div class="arrow"></div><div class="stop"><div class="dot"></div><small>MUJI</small></div><div class="arrow"></div><div class="stop"><div class="dot"></div><small>ASICS</small></div><div class="arrow"></div><div class="stop main"><div class="dot"></div><small>DONKI</small></div><div class="arrow"></div><div class="stop"><div class="dot"></div><small>铜锣湾街区</small></div></div></div>
+<div class="day-body">
+<div class="row"><div class="time">10:00</div><div class="act">家里早餐；带购物袋、舒适鞋。</div><div class="cost">HK$0–80<em>家中</em></div></div>
+<div class="row"><div class="time">11:00–15:30</div><div class="act">铜锣湾：MUJI → ASICS → 其他鞋店/商场。先买确定要买的，再逛。</div><div class="cost">HK$0<em>购物另算</em></div></div>
+<div class="row"><div class="time">午饭</div><div class="act">购物途中解决，不安排名店硬任务。</div><div class="cost">HK$220–320<em>四人</em></div></div>
+<div class="row"><div class="time">15:30–17:00</div><div class="act">DONKI 最后买，尤其零食、日用品、伴手礼。</div><div class="cost">HK$0<em>购物另算</em></div></div>
+<div class="row"><div class="time">17:30+</div><div class="act">铜锣湾附近继续逛街；如果购物已经完成，可以找咖啡店、甜品店或商场休息，再决定晚饭。</div><div class="cost">HK$80–250<em>晚饭/交通</em></div></div>
+<div class="meal"><b>今日吃：</b>购物日以简单午餐为主，晚上可以麦当劳＋奶昔可作为忙碌时段的轻松方案。</div>
+</div>
+<div class="day-total"><span>预计公共支出（不含购物）</span><strong>HK$300–650</strong></div>
+</article>
+
+<article class="card day">
+<div class="day-head"><div class="day-num">29<small>SAT · AUG</small></div><div class="day-title"><h3>西九文化日｜香港故宫＋海滨＋家宴</h3><div class="mood">把强度降下来；博物馆是主菜，晚上回家。</div></div></div>
+<div class="route"><b>路线</b> 家 → 西九文化区 → 香港故宫 → 西九海滨 → 回家 / 楼下用餐</div>
+<div class="route-map"><div class="route-line"><div class="stop main"><div class="dot"></div><small>家</small></div><div class="arrow"></div><div class="stop main"><div class="dot"></div><small>香港故宫</small></div><div class="arrow"></div><div class="stop"><div class="dot"></div><small>西九海滨</small></div><div class="arrow"></div><div class="stop main"><div class="dot"></div><small>家</small></div></div></div>
+<div class="day-body">
+<div class="row"><div class="time">09:30</div><div class="act">家里早餐。</div><div class="cost">HK$0–80<em>家中</em></div></div>
+<div class="row"><div class="time">10:30–14:30</div><div class="act">香港故宫。重点看自己感兴趣的展厅，不追求“全部看完”。2026/8/29 为周六，官方开放至20:00。</div><div class="cost">HK$1,000<em>四成人基准：$250×4</em></div></div>
+<div class="row"><div class="time">14:30–17:00</div><div class="act">西九文化区、海滨坐坐。这里故意留白。</div><div class="cost">HK$40–100<em>交通/饮料</em></div></div>
+<div class="row"><div class="time">17:00+</div><div class="act">去楼下吃 FreshFarm 牛排。</div><div class="cost">HK$350–550<em>FreshFarm牛排/配菜规划</em></div></div>
+<div class="meal"><b>今日吃：</b><span class="home">FreshFarm 牛排 · 楼下晚餐 ★★★★★</span>。这顿直接安排在楼下，作为当天的正式晚餐。</div>
+</div>
+<div class="day-total"><span>预计公共支出</span><strong>HK$1,390–1,730</strong></div>
+</article>
+
+<article class="card day">
+<div class="day-head"><div class="day-num">30<small>SUN · AUG</small></div><div class="day-title"><h3>赤柱半日｜南区海边，不再安排西贡</h3><div class="mood">海边只保留一种：赤柱。下午回到港岛再决定。</div></div></div>
+<div class="route"><b>路线</b> 家 → 赤柱市场/美利楼 → 赤柱海滨 → 巴士回中环 → 视体力回家</div>
+<div class="route-map"><div class="route-line"><div class="stop main"><div class="dot"></div><small>家</small></div><div class="arrow"></div><div class="stop main"><div class="dot"></div><small>赤柱</small></div><div class="arrow"></div><div class="stop"><div class="dot"></div><small>海滨</small></div><div class="arrow"></div><div class="stop"><div class="dot"></div><small>中环</small></div><div class="arrow"></div><div class="stop main"><div class="dot"></div><small>家</small></div></div></div>
+<div class="day-body">
+<div class="row"><div class="time">09:30</div><div class="act">家里早餐后出门。</div><div class="cost">HK$0–80<em>家中</em></div></div>
+<div class="row"><div class="time">11:00–14:30</div><div class="act">赤柱市场、美利楼、海滨散步、午饭。重点是“坐下来看看海”，不是景点扫荡。</div><div class="cost">HK$350–500<em>交通＋午饭</em></div></div>
+<div class="row"><div class="time">15:00+</div><div class="act">坐巴士回中环。若大家有精神，可补孙中山相关地点、书店/CD或叮叮车；累了直接回家。</div><div class="cost">HK$60–120<em>四人</em></div></div>
+<div class="row"><div class="time">晚饭</div><div class="act">家楼下清汤牛腩。</div><div class="cost">HK$250–400<em>四人规划</em></div></div>
+<div class="meal"><b>今日吃：</b><span class="home">清汤牛腩 ★★★★★</span>。这是“住在香港”的一顿饭，而不是旅游打卡。</div>
+</div>
+<div class="day-total"><span>预计公共支出</span><strong>HK$660–1,100</strong></div>
+</article>
+
+<article class="card day">
+<div class="day-head"><div class="day-num">31<small>MON · AUG</small></div><div class="day-title"><h3>留白｜补漏 · 收拾 · 深圳</h3><div class="mood">不再安排景点，给一家人留出真正的缓冲。</div></div></div>
+<div class="route"><b>路线</b> 家 → 最后采购/早餐 → 收拾 → 深圳</div>
+<div class="day-body">
+<div class="row"><div class="time">上午</div><div class="act">自然醒、早餐、收拾行李。检查证件、充电器、购物袋。</div><div class="cost">HK$0–100<em>家中/附近</em></div></div>
+<div class="row"><div class="time">中午前</div><div class="act">若前三天漏掉 MUJI、ASICS、DONKI、CD店或甜品，这里只补最重要的一项。</div><div class="cost">HK$0–300<em>不含购物</em></div></div>
+<div class="row"><div class="time">下午</div><div class="act">按已有计划前往深圳。</div><div class="cost">不计入本港预算</div></div>
+<div class="meal"><b>今日吃：</b>早餐在家；中午简单解决。不要为了最后一顿把转场搞得很赶。</div>
+</div>
+<div class="day-total"><span>预计公共支出</span><strong>HK$0–400</strong></div>
+</article>
+</section>
+
+<section id="food">
+<div class="section-title"><span>03</span><h2>吃什么：按“路线”而不是按网红榜</h2></div>
+<table class="food-table">
+<tr><th>优先级</th><th>食物 / 餐</th><th>放在哪里最合理</th><th>四人预算</th></tr>
+<tr><td class="priority">★★★★★</td><td>FreshFarm 牛排</td><td class="home">29日晚 · 楼下店里吃</td><td>HK$350–550</td></tr>
+<tr><td class="priority">★★★★★</td><td>清汤牛腩</td><td class="home">30日晚 · 家附近</td><td>HK$250–400</td></tr>
+<tr><td class="priority">★★★★★</td><td>蛋挞</td><td>26日尖沙咀顺路</td><td>HK$40–100</td></tr>
+<tr><td class="priority">★★★★★</td><td>车仔面</td><td>27日油尖旺</td><td>HK$180–300</td></tr>
+<tr><td class="priority">★★★★</td><td>初遇台湾菜</td><td>25日晚；若抵达后不想跑，改家附近</td><td>HK$350–500</td></tr>
+<tr><td class="priority">★★★★</td><td>叻沙</td><td>机动；不为了它单独跨区</td><td>HK$180–300</td></tr>
+<tr><td class="priority">★★★★</td><td>鸡蛋仔</td><td>27日旺角 / 其他顺路点</td><td>HK$40–80</td></tr>
+<tr><td>★★★</td><td>焦糖炖蛋泡芙</td><td>27 / 29，按店址决定</td><td>HK$60–120</td></tr>
+<tr><td>★★★</td><td>豆浆冰淇淋</td><td>27 / 29，按店址决定</td><td>HK$50–100</td></tr>
+<tr><td>★★★</td><td>麦当劳＋奶昔</td><td>购物/暴走日的轻松备选</td><td>HK$150–220</td></tr>
+</table>
+
+</section>
+
+<section id="budget">
+<div class="section-title"><span>04</span><h2>预算｜这次不要用“每天四人网红餐”算法</h2></div>
+<div class="budget">
+<div class="card">
+<div class="sub">香港 8/25–8/31 · 四人 · 不含购物 / 住宿 / 深圳</div>
+<div class="big">HK$5,000–6,500</div>
+<p class="sub">这是我更建议你们拿来做家庭公共账的区间。购物（ASICS / MUJI / DONKI）完全独立。</p>
+<div class="bar"><i style="width:55%"></i></div>
+<div class="budget-list">
+<div><span>外食＋甜品</span><b>HK$3,000–3,800</b></div>
+<div><span>家中早餐/其他采购</span><b>HK$700–1,000</b></div>
+<div><span>交通</span><b>HK$700–1,000</b></div>
+<div><span>香港故宫</span><b>HK$1,000*</b></div>
+<div><span>其他门票/小额支出</span><b>HK$200–500</b></div>
+</div>
+</div>
+<div class="card">
+<div class="sub">其中最大的一笔</div>
+<div class="big">HK$1,000</div>
+<p>香港故宫按四位成人购买全馆通行基本票估算：HK$250 × 4。官方当前票价为成人 HK$250，特惠 HK$125；实际如果父母符合长者/其他优惠资格，费用会明显下降。citeturn0search0turn0search3</p>
+<div class="note">这也是为什么我把“博物馆日”设计成半天＋海滨，而不是再塞三四个收费景点。</div>
+</div>
+</div>
+<div class="note warn"><b>重要：</b>上面的总预算是“规划账”，不是逐项实时报价。尤其 FreshFarm 牛排、甜品、车仔面最终消费会取决于你们点多少；而购物金额不应混进旅游公共预算。</div>
+</section>
+
+<section id="rules">
+<div class="section-title"><span>05</span><h2>规划原则</h2></div>
+<details open><summary>① 不再加西贡、长洲、南丫岛</summary><p>你们已经有太平山＋龙虎山、坚尼地城、赤柱、西九海滨。继续加海岛/西贡，会让“户外香港”重复，而且八月底炎热。</p></details>
+<details open><summary>② 26日和27日完全换场</summary><p>26日只做港岛经典＋维港；27日只做九龙旧城＋油尖旺。这样不会出现两天都在中环/上环打转。</p></details>
+<details open><summary>③ 中环的孙中山/兴中会遗址不硬塞</summary><p>它是你们有兴趣的历史点，但不值得为了它单独开半天。30日赤柱回中环后若有体力，或者26日中环段临时留白，再顺手完成。</p></details>
+<details open><summary>④ 购物日就是购物日</summary><p>28日不要同时安排故宫、山、海滩等大景点。MUJI、ASICS、DONKI＋跑马地已经够一天。</p></details>
+<details open><summary>⑤ 故宫为什么放29日</summary><p>8/29是周六，香港故宫官方目前周五、周六及公众假期开放至20:00；而8/30虽然也是周日，但当天也是延长至20:00。8/29先做文化日，晚上回家吃牛排，节奏最舒服。</p></details>
+</section>
+
+<div class="footer">
+香港之旅 · 2026.08.25—08.31<br>
+实时开放时间、天气及餐厅营业情况请于出发前再次确认。
+</div>
+</div>
+</body>
+</html>
