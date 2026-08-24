@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f3efe7">
+<title>香港之旅 2026.08.25-08.31 城市旅行特刊</title>
+<style>
+:root {
+  --paper: #f3efe7;
+  --ink: #211d18;
+  --sub: #6f675d;
+  --line: #d5cbbd;
+  --card: #fffdf8;
+  --red: #a83933;
+  --teal: #255b65;
+  --amber: #b8893f;
+  --green: #4f6e53;
+  --navy: #213446;
+  --ticket: #f8f0df;
+  --shadow: 0 12px 32px rgba(40, 32, 24, 0.1);
+  --hero-a: #f0e5d2;
+  --hero-b: #d3d5d1;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 90% 4%, #d0c5b0 0 7%, transparent 8%),
+    radial-gradient(circle at 4% 14%, #d9c6a7 0 9%, transparent 10%),
+    linear-gradient(180deg, #f7f4ed 0%, var(--paper) 33%, #efe8dc 100%);
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans SC", sans-serif;
+  line-height: 1.7;
+}
+
+.page {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 16px 16px 56px;
+}
+
+.cover {
+  position: relative;
+  min-height: 72vh;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: 16px;
+  padding: 26px 8px 18px;
+}
+
+.kicker {
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  color: var(--red);
+  font-weight: 800;
+}
+
+.cover h1 {
+  margin: 0;
+  font-family: "Times New Roman", "Songti SC", serif;
+  letter-spacing: -0.04em;
+  font-weight: 500;
+  font-size: clamp(48px, 10vw, 94px);
+  line-height: 0.96;
+}
+
+.cover-sub {
+  max-width: 720px;
+  color: #4b453f;
+  font-size: 17px;
+}
+
+.cover-meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 12px 0;
+}
+
+.chip {
+  border: 1px solid #ccbfae;
+  background: #f8f3e9;
+  color: #4e4841;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 4px 10px;
+}
+
+.hero {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.hero img {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.44) 72%, rgba(0, 0, 0, 0.62) 100%);
+}
+
+.hero-caption {
+  position: absolute;
+  left: 26px;
+  bottom: 20px;
+  z-index: 2;
+  color: #fff;
+}
+
+.hero-caption b {
+  display: block;
+  font-family: "Times New Roman", serif;
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 1.08;
+}
+
+.hero-caption span {
+  display: block;
+  margin-top: 7px;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  opacity: 0.95;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  margin: 0 -16px;
+  padding: 10px 16px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: rgba(243, 239, 231, 0.92);
+  backdrop-filter: blur(10px);
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+nav a {
+  color: var(--ink);
+  font-size: 13px;
+  text-decoration: none;
+  margin-right: 16px;
+}
+
+nav a:hover {
+  color: var(--red);
+}
+
+section {
+  margin-top: 58px;
+}
+
+.section-title {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 10px;
+  margin-bottom: 18px;
+}
+
+.section-no {
+  font-size: 12px;
+  color: var(--red);
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.section-title h2 {
+  margin: 0;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.section-side {
+  margin-left: auto;
+  color: var(--sub);
+  font-size: 12px;
+}
+
+.intro {
+  max-width: 800px;
+  font-size: 15px;
+  color: #59534b;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  border-radius: 8px;
+}
+
+.principles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.principles .card {
+  padding: 16px;
+}
+
+.principles b {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+.principles p {
+  margin: 0;
+  color: var(--sub);
+  font-size: 13px;
+}
+
+.day-carousel {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  margin: 0 -16px;
+  padding: 4px 16px 24px;
+  scrollbar-width: none;
+}
+
+.day-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.day-slide {
+  flex: 0 0 88vw;
+  max-width: 760px;
+  scroll-snap-align: start;
+  overflow: hidden;
+}
+
+.day-head {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 14px;
+  align-items: center;
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--line);
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  background: linear-gradient(180deg, #fdf9f1 0%, #fcf8f0 100%);
+}
+
+.day-head::after {
+  content: ">";
+  position: absolute;
+  right: 20px;
+  color: var(--sub);
+  transform: translateY(-2px) rotate(90deg);
+  transition: transform 0.2s ease;
+  font-size: 19px;
+}
+
+.day-slide.expanded .day-head::after {
+  transform: translateY(-2px) rotate(-90deg);
+}
+
+.day-num {
+  font-family: "Times New Roman", serif;
+  font-size: 38px;
+  color: var(--red);
+  line-height: 1;
+}
+
+.day-num small {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--sub);
+  margin-top: 5px;
+}
+
+.day-title h3 {
+  margin: 0;
+  font-size: 23px;
+}
+
+.day-title .mood {
+  margin-top: 4px;
+  color: var(--sub);
+  font-size: 13px;
+}
+
+.route {
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--line);
+  background: #efe8dc;
+  color: var(--teal);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.route b { color: var(--red); }
+
+.route-map {
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--line);
+  background: #fff8ee;
+}
+
+.route-line {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  padding-bottom: 3px;
+}
+
+.stop {
+  text-align: center;
+  min-width: max-content;
+}
+
+.stop-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--teal);
+  border: 2px solid #c8dbde;
+  margin: 0 auto;
+}
+
+.stop.main .stop-dot {
+  background: var(--red);
+  border-color: #eec6c3;
+}
+
+.stop small {
+  display: block;
+  margin-top: 6px;
+  font-size: 11px;
+  color: var(--sub);
+}
+
+.arrow {
+  width: 34px;
+  height: 1px;
+  margin: 0 8px;
+  background: #bcb3a3;
+  position: relative;
+  flex: 0 0 34px;
+}
+
+.arrow::after {
+  content: ">";
+  position: absolute;
+  right: -1px;
+  top: -11px;
+  color: #bcb3a3;
+}
+
+.day-body {
+  display: none;
+  padding: 0 20px 14px;
+}
+
+.day-slide.expanded .day-body {
+  display: block;
+  animation: show 0.2s ease;
+}
+
+@keyframes show {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 88px 1fr 120px;
+  gap: 10px;
+  padding: 12px 0;
+  border-bottom: 1px dashed #d8cfbf;
+  align-items: start;
+}
+
+.row:last-child {
+  border-bottom: 0;
+}
+
+.time {
+  color: var(--red);
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.act {
+  font-size: 14px;
+}
+
+.cost {
+  text-align: right;
+  font-size: 13px;
+  color: var(--teal);
+  font-variant-numeric: tabular-nums;
+}
+
+.cost em {
+  display: block;
+  color: var(--sub);
+  font-size: 11px;
+  font-style: normal;
+}
+
+.ticket-ribbon {
+  margin-top: 12px;
+  border: 1px dashed #c6b58f;
+  border-radius: 6px;
+  background: var(--ticket);
+  padding: 10px 12px;
+  font-size: 13px;
+}
+
+.ticket-ribbon b {
+  color: #865f20;
+}
+
+.day-total {
+  margin-top: 12px;
+  border-top: 1px solid var(--line);
+  padding: 12px 0 2px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.day-total strong {
+  color: var(--red);
+  font-size: 18px;
+}
+
+.mtr-shell {
+  padding: 16px;
+}
+
+.mtr-note {
+  color: var(--sub);
+  font-size: 13px;
+  margin-top: 0;
+}
+
+.mtr-wrap {
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fdf9f2;
+}
+
+.mtr-map {
+  width: 100%;
+  min-width: 850px;
+  display: block;
+}
+
+.mtr-stop {
+  cursor: pointer;
+}
+
+.mtr-stop circle {
+  fill: var(--teal);
+  stroke: #d2e4e6;
+  stroke-width: 2;
+}
+
+.mtr-stop.active circle {
+  fill: var(--red);
+  stroke: #f0d0ce;
+}
+
+.mtr-stop text {
+  font-size: 12px;
+  fill: #2f2a26;
+}
+
+.station-panel {
+  margin-top: 12px;
+  border-left: 3px solid var(--red);
+  background: #fff6ec;
+  padding: 14px;
+  border-radius: 8px;
+  display: none;
+}
+
+.station-panel.on {
+  display: block;
+}
+
+.switch {
+  display: flex;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.switch button {
+  flex: 1;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 11px;
+  background: #fff;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.switch .on {
+  background: var(--red);
+  border-color: var(--red);
+  color: #fff;
+}
+
+.view {
+  display: none;
+}
+
+.view.on {
+  display: block;
+}
+
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 12px;
+}
+
+.food-card {
+  overflow: hidden;
+}
+
+.photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  display: block;
+  border-bottom: 1px solid var(--line);
+  background-size: cover;
+  background-position: center;
+}
+
+.food-body {
+  padding: 12px;
+}
+
+.food-body h3 {
+  margin: 0 0 6px;
+  font-size: 17px;
+}
+
+.meta-line {
+  margin: 0;
+  color: var(--sub);
+  font-size: 12px;
+}
+
+.tag {
+  display: inline-block;
+  background: #efe8db;
+  color: #5b5247;
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 11px;
+  margin-right: 4px;
+}
+
+.score {
+  color: var(--red);
+  font-weight: 800;
+}
+
+.food-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--line);
+  background: var(--card);
+  font-size: 13px;
+}
+
+.food-table th,
+.food-table td {
+  border-bottom: 1px solid var(--line);
+  padding: 10px 11px;
+  text-align: left;
+}
+
+.food-table th {
+  background: #efe8dc;
+  font-size: 12px;
+}
+
+.food-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.priority { color: var(--red); font-weight: 800; }
+.home { color: var(--green); font-weight: 800; }
+
+.budget {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 12px;
+}
+
+.budget .card {
+  padding: 16px;
+}
+
+.big {
+  margin: 6px 0;
+  font-family: "Times New Roman", serif;
+  color: var(--red);
+  font-size: 40px;
+  line-height: 1.1;
+}
+
+.sub {
+  color: var(--sub);
+  font-size: 12px;
+}
+
+.bar {
+  margin: 8px 0 12px;
+  height: 10px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: #e4ddd2;
+}
+
+.bar i {
+  display: block;
+  height: 100%;
+  background: var(--teal);
+}
+
+.budget-list div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  border-bottom: 1px dashed var(--line);
+  padding: 8px 0;
+}
+
+.budget-list div:last-child {
+  border-bottom: 0;
+}
+
+.note {
+  margin-top: 12px;
+  background: #edf2ef;
+  border-left: 3px solid var(--teal);
+  padding: 12px;
+  font-size: 13px;
+}
+
+.note.warn {
+  background: #faeee7;
+  border-left-color: var(--red);
+}
+
+.checklist {
+  padding: 16px;
+}
+
+.check {
+  border-bottom: 1px dashed var(--line);
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.check:last-child {
+  border-bottom: 0;
+}
+
+.check input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--red);
+}
+
+.badge-strip {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.badge-card {
+  border: 1px dashed #ccbca5;
+  background: #faf4e7;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.badge-card b {
+  display: block;
+  color: #734f1d;
+  margin-bottom: 4px;
+}
+
+details {
+  border-top: 1px solid var(--line);
+  padding: 12px 0;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.footer {
+  border-top: 1px solid var(--line);
+  margin-top: 52px;
+  padding-top: 16px;
+  color: var(--sub);
+  font-size: 11px;
+}
+
+.poster-grid {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.poster {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff9ef;
+}
+
+.poster svg {
+  width: 100%;
+  display: block;
+  aspect-ratio: 3 / 4;
+}
+
+.poster p {
+  margin: 0;
+  padding: 8px 10px;
+  font-size: 12px;
+  color: #59524a;
+}
+
+@media (max-width: 740px) {
+  .page { padding: 12px 12px 48px; }
+  nav { margin: 0 -12px; padding: 9px 12px; }
+  .cover { min-height: 62vh; }
+  .hero img { height: 300px; }
+  .hero-caption { left: 16px; bottom: 14px; }
+  .hero-caption b { font-size: 24px; }
+  .principles, .budget, .poster-grid, .badge-strip { grid-template-columns: 1fr; }
+  .day-slide { flex-basis: 91vw; }
+  .day-head { grid-template-columns: 72px 1fr; }
+  .day-num { font-size: 33px; }
+  .day-title h3 { font-size: 20px; }
+  .row { grid-template-columns: 72px 1fr; }
+  .cost { grid-column: 2; text-align: left; margin-top: -5px; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="cover">
+  <div class="kicker">HONG KONG TRAVEL ANNUAL ISSUE</div>
+  <h1>香港之旅</h1>
+  <p class="cover-sub">2026.08.25-08.31。以你原始行程为底稿，升级为可收藏的城市旅行特刊：保留七天节奏与预算逻辑，补全路线、美食与现场执行细节。</p>
+  <div class="cover-meta">
+    <span class="chip">四人旅行</span>
+    <span class="chip">住宿在家</span>
+    <span class="chip">预算 HK$5,000-6,500（不含购物）</span>
+    <span class="chip">在线图片版</span>
+  </div>
+  <div class="hero" aria-label="香港城市封面图像">
+    <img src="https://images.unsplash.com/photo-1536599018102-9f803c140fc1?auto=format&fit=crop&w=2200&q=80" alt="香港城市夜景">
+    <div class="hero-caption">
+      <b>HONG KONG CITY ISSUE</b>
+      <span>HARBOUR LIGHTS · MTR STOPS · STREET EATS</span>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <a href="#plan">总览</a>
+  <a href="#days">七天行程</a>
+  <a href="#map">港铁美食地图</a>
+  <a href="#food">美食双模式</a>
+  <a href="#top">编辑部推荐</a>
+  <a href="#food-table">吃什么</a>
+  <a href="#stamp">打卡系统</a>
+  <a href="#budget">预算</a>
+  <a href="#rules">原则</a>
+</nav>
+
+<section id="plan">
+  <div class="section-title">
+    <span class="section-no">01</span>
+    <h2>旅行骨架</h2>
+  </div>
+  <p class="intro">你原有的266行行程核心不变：七天主线、每日预算、时间轴、路线图全部保留。升级重点放在可读性与执行性，把每一日都变成可直接照走的编辑化页面。</p>
+  <div class="principles">
+    <div class="card"><b>25｜抵达日</b><p>先安顿，再散步，建立生活半径。</p></div>
+    <div class="card"><b>26｜港岛经典</b><p>太平山与维港主线，完成城市第一印象。</p></div>
+    <div class="card"><b>27｜九龙旧城</b><p>黄大仙到油尖旺，街头与文化并行。</p></div>
+    <div class="card"><b>28｜购物日</b><p>铜锣湾集中处理，不混入大景点。</p></div>
+    <div class="card"><b>29｜文化日</b><p>香港故宫加西九海滨，节奏放慢。</p></div>
+    <div class="card"><b>30-31｜南区与留白</b><p>赤柱半日，最后一天补漏与返程。</p></div>
+  </div>
+</section>
+
+<section id="days">
+  <div class="section-title">
+    <span class="section-no">02</span>
+    <h2>七天时间轴与路线</h2>
+    <span class="section-side">左右滑动切换 · 点击标题展开</span>
+  </div>
+
+  <div class="day-carousel">
+
+    <article class="card day-slide expanded" data-day="0">
+      <div class="day-head">
+        <div class="day-num">25<small>TUE AUG</small></div>
+        <div class="day-title">
+          <h3>抵达｜港大 · 坚尼地城</h3>
+          <div class="mood">第一晚只做一件事：把旅途调整为居住节奏。</div>
+        </div>
+      </div>
+      <div class="route"><b>路线</b> 高铁入港 → 家中整顿 → 坚尼地城海滨 → 回家</div>
+      <div class="route-map">
+        <div class="route-line">
+          <div class="stop main"><div class="stop-dot"></div><small>家</small></div><div class="arrow"></div>
+          <div class="stop"><div class="stop-dot"></div><small>家周边</small></div><div class="arrow"></div>
+          <div class="stop main"><div class="stop-dot"></div><small>坚尼地城</small></div><div class="arrow"></div>
+          <div class="stop"><div class="stop-dot"></div><small>家</small></div>
+        </div>
+      </div>
+      <div class="day-body">
+        <div class="row"><div class="time">17:00</div><div class="act">抵达后入住，补水，整理行李与证件。第一小时只做安顿。</div><div class="cost">HK$0<em>已含住宿</em></div></div>
+        <div class="row"><div class="time">18:00</div><div class="act">家附近走一圈，确认便利店、超市、地铁入口。</div><div class="cost">HK$0-80<em>机动采购</em></div></div>
+        <div class="row"><div class="time">19:00</div><div class="act">坚尼地城海滨散步，今天不追打卡时刻，只要舒服。</div><div class="cost">HK$30-60<em>四人交通</em></div></div>
+        <div class="row"><div class="time">晚饭</div><div class="act">初遇台湾菜优先；若体力不足，改家附近轻晚餐。</div><div class="cost">HK$350-500<em>四人</em></div></div>
+        <div class="ticket-ribbon"><b>今日票据：</b>地铁或巴士单程票 + 便利店补给小票，建议单独收纳到“抵达日”袋。</div>
+        <div class="day-total"><span>预计公共支出</span><strong>HK$380-640</strong></div>
+      </div>
+    </article>
+
+    <article class="card day-slide" data-day="1">
+      <div class="day-head">
+        <div class="day-num">26<small>WED AUG</small></div>
+        <div class="day-title">
+          <h3>港岛山海｜太平山 · 龙虎山 · 中环 · 天星</h3>
+          <div class="mood">最具香港辨识度的一天，晴天优先完成完整户外线。</div>
+        </div>
+      </div>
+      <div class="route"><b>路线</b> 家 → 中环 → 太平山 → 龙虎山短线 → 摩天轮 → 天星小轮 → 尖沙咀星光大道</div>
+      <div class="route-map">
+        <div class="route-line">
+          <div class="stop main"><div class="stop-dot"></div><small>家</small></div><div class="arrow"></div>
+          <div class="stop main"><div class="stop-dot"></div><small>太平山</small></div><div class="arrow"></div>
+          <div class="stop"><div class="stop-dot"></div><small>中环</small></div><div class="arrow"></div>
+          <div class="stop main"><div class="stop-dot"></div><small>天星码头</small></div><div class="arrow"></div>
+          <div class="stop main"><div class="stop-dot"></div><small>尖沙咀</small></div>
+        </div>
+      </div>
+      <div class="day-body">
+        <div class="row"><div class="time">10:00</div><div class="act">家中早餐，补足饮水，准备雨伞与防晒。</div><div class="cost">HK$0-80<em>家中</em></div></div>
+        <div class="row"><div class="time">11:30</div><div class="act">上山前看实时天气，雷雨则取消龙虎山短线。</div><div class="cost">HK$60-180<em>四人交通</em></div></div>
+        <div class="row"><div class="time">12:30-16:00</div><div class="act">太平山主景 + 龙虎山或卢吉道短段，体力优先。</div><div class="cost">HK$0-350<em>交通与机动票</em></div></div>
+        <div class="row"><div class="time">16:30</div><div class="act">下山回中环休整，转摩天轮及码头动线。</div><div class="cost">HK$40-120<em>四人</em></div></div>
+        <div class="row"><div class="time">日落后</div><div class="act">天星小轮过海，尖沙咀散步至星光大道。</div><div class="cost">HK$30-60<em>四人渡海</em></div></div>
+        <div class="row"><div class="time">晚饭</div><div class="act">尖沙咀就地解决，并完成蛋挞任务。</div><div class="cost">HK$380-550<em>四人</em></div></div>
+        <div class="ticket-ribbon"><b>今日票据：</b>山顶交通票、天星小轮票。建议在背面写下天气与到达时间。</div>
+        <div class="day-total"><span>预计公共支出</span><strong>HK$510-1,340</strong></div>
+      </div>
+    </article>
+
+    <article class="card day-slide" data-day="2">
+      <div class="day-head">
+        <div class="day-num">27<small>THU AUG</small></div>
+        <div class="day-title">
+          <h3>九龙旧城｜黄大仙 · 钻石山 · 旺角 · 太子 · 深水埗</h3>
+          <div class="mood">传统香港与街头生活连续切换的一天。</div>
+        </div>
+      </div>
+      <div class="route"><b>路线</b> 家 → 黄大仙祠 → 南莲园池/志莲净苑 → 朗豪坊 → 旺角 → 太子 → 深水埗豆品店</div>
+      <div class="route-map">
+        <div class="route-line">
+          <div class="stop main"><div class="stop-dot"></div><small>黄大仙</small></div><div class="arrow"></div>
+          <div class="stop"><div class="stop-dot"></div><small>钻石山</small></div><div class="arrow"></div>
+          <div class="stop main"><div class="stop-dot"></div><small>旺角</small></div><div class="arrow"></div>
+          <div class="stop"><div class="stop-dot"></div><small>太子</small></div><div class="arrow"></div>
+          <div class="stop main"><div class="stop-dot"></div><small>深水埗</small></div>
+        </div>
+      </div>
+      <div class="day-body">
+        <div class="row"><div class="time">09:30</div><div class="act">家中早餐后出发。</div><div class="cost">HK$0-80<em>家中</em></div></div>
+        <div class="row"><div class="time">10:15-11:30</div><div class="act">黄大仙祠，感受香港民间信仰现场。</div><div class="cost">HK$0<em>门票免费</em></div></div>
+        <div class="row"><div class="time">11:45-13:15</div><div class="act">南莲园池与志莲净苑，炎热时缩短园林段。</div><div class="cost">HK$0<em>免费</em></div></div>
+        <div class="row"><div class="time">13:30</div><div class="act">九龙简餐午饭。</div><div class="cost">HK$220-320<em>四人</em></div></div>
+        <div class="row"><div class="time">14:30-17:30</div><div class="act">朗豪坊与旺角街区，商场只作为节点，不耗尽下午。</div><div class="cost">HK$0-100<em>不含购物</em></div></div>
+        <div class="row"><div class="time">17:30-20:30</div><div class="act">太子书店/CD店，之后转深水埗公和荳品厂喝热豆浆。</div><div class="cost">HK$120-260<em>交通与小吃</em></div></div>
+        <div class="row"><div class="time">晚饭</div><div class="act">车仔面 + 鸡蛋仔，甜品三选一。</div><div class="cost">HK$300-500<em>四人</em></div></div>
+        <div class="ticket-ribbon"><b>今日票据：</b>推荐把公和荳品厂小票夹在这天，作为九龙线完整收官。</div>
+        <div class="day-total"><span>预计公共支出</span><strong>HK$640-1,260</strong></div>
+      </div>
+    </article>
+
+    <article class="card day-slide" data-day="3">
+      <div class="day-head">
+        <div class="day-num">28<small>FRI AUG</small></div>
+        <div class="day-title">
+          <h3>购物主场｜铜锣湾 MUJI · ASICS · DONKI</h3>
+          <div class="mood">购物日不叠加景点，动线干净，效率最高。</div>
+        </div>
+      </div>
+      <div class="route"><b>路线</b> 家 → 铜锣湾 → MUJI/ASICS/商场 → DONKI → 街区晚餐</div>
+      <div class="route-map">
+        <div class="route-line">
+          <div class="stop main"><div class="stop-dot"></div><small>家</small></div><div class="arrow"></div>
+          <div class="stop main"><div class="stop-dot"></div><small>铜锣湾</small></div><div class="arrow"></div>
+          <div class="stop"><div class="stop-dot"></div><small>MUJI</small></div><div class="arrow"></div>
+          <div class="stop"><div class="stop-dot"></div><small>ASICS</small></div><div class="arrow"></div>
+          <div class="stop main"><div class="stop-dot"></div><small>DONKI</small></div>
+        </div>
+      </div>
+      <div class="day-body">
+        <div class="row"><div class="time">10:00</div><div class="act">家中早餐，轻装出门，带购物袋与舒适鞋。</div><div class="cost">HK$0-80<em>家中</em></div></div>
+        <div class="row"><div class="time">11:00-15:30</div><div class="act">先买确定项，再逛品牌店，避免反复回头。</div><div class="cost">HK$0<em>购物另算</em></div></div>
+        <div class="row"><div class="time">午饭</div><div class="act">中途轻食，不给午餐设置排队任务。</div><div class="cost">HK$220-320<em>四人</em></div></div>
+        <div class="row"><div class="time">15:30-17:00</div><div class="act">DONKI 放在最后，集中买零食与伴手礼。</div><div class="cost">HK$0<em>购物另算</em></div></div>
+        <div class="row"><div class="time">17:30+</div><div class="act">街区收尾，咖啡或甜品，晚饭再决定。</div><div class="cost">HK$80-250<em>机动</em></div></div>
+        <div class="ticket-ribbon"><b>今日票据：</b>购物小票单独分袋，公共旅费与购物费分开记录。</div>
+        <div class="day-total"><span>预计公共支出（不含购物）</span><strong>HK$300-650</strong></div>
+      </div>
+    </article>
+
+    <article class="card day-slide" data-day="4">
+      <div class="day-head">
+        <div class="day-num">29<small>SAT AUG</small></div>
+        <div class="day-title">
+          <h3>西九文化日｜香港故宫 + 海滨 + 家宴</h3>
+          <div class="mood">主动降速，文化主线一天只做一件大事。</div>
+        </div>
+      </div>
+      <div class="route"><b>路线</b> 家 → 西九文化区 → 香港故宫 → 海滨 → 回家吃 FreshFarm 牛排</div>
+      <div class="route-map">
+        <div class="route-line">
+          <div class="stop main"><div class="stop-dot"></div><small>家</small></div><div class="arrow"></div>
+          <div class="stop main"><div class="stop-dot"></div><small>香港故宫</small></div><div class="arrow"></div>
+          <div class="stop"><div class="stop-dot"></div><small>西九海滨</small></div><div class="arrow"></div>
+          <div class="stop main"><div class="stop-dot"></div><small>家</small></div>
+        </div>
+      </div>
+      <div class="day-body">
+        <div class="row"><div class="time">09:30</div><div class="act">家中早餐，轻装前往西九。</div><div class="cost">HK$0-80<em>家中</em></div></div>
+        <div class="row"><div class="time">10:30-14:30</div><div class="act">香港故宫以兴趣展厅优先，不追求一口气看完。</div><div class="cost">HK$1,000<em>成人四位基准</em></div></div>
+        <div class="row"><div class="time">14:30-17:00</div><div class="act">西九海滨留白段，坐下来休整。</div><div class="cost">HK$40-100<em>饮料交通</em></div></div>
+        <div class="row"><div class="time">17:00+</div><div class="act">回家楼下 FreshFarm 牛排，作为文化日收官晚宴。</div><div class="cost">HK$350-550<em>四人</em></div></div>
+        <div class="ticket-ribbon"><b>今日票据：</b>故宫门票与展览单页建议留存，可做旅程纪念页。</div>
+        <div class="day-total"><span>预计公共支出</span><strong>HK$1,390-1,730</strong></div>
+      </div>
+    </article>
+
+    <article class="card day-slide" data-day="5">
+      <div class="day-head">
+        <div class="day-num">30<small>SUN AUG</small></div>
+        <div class="day-title">
+          <h3>赤柱半日｜南区海边</h3>
+          <div class="mood">海边只留一个版本，把“看海”做完整。</div>
+        </div>
+      </div>
+      <div class="route"><b>路线</b> 家 → 赤柱市场/美利楼 → 海滨午饭 → 巴士回中环 → 回家</div>
+      <div class="route-map">
+        <div class="route-line">
+          <div class="stop main"><div class="stop-dot"></div><small>家</small></div><div class="arrow"></div>
+          <div class="stop main"><div class="stop-dot"></div><small>赤柱</small></div><div class="arrow"></div>
+          <div class="stop"><div class="stop-dot"></div><small>海滨</small></div><div class="arrow"></div>
+          <div class="stop"><div class="stop-dot"></div><small>中环</small></div><div class="arrow"></div>
+          <div class="stop main"><div class="stop-dot"></div><small>家</small></div>
+        </div>
+      </div>
+      <div class="day-body">
+        <div class="row"><div class="time">09:30</div><div class="act">家中早餐后出发。</div><div class="cost">HK$0-80<em>家中</em></div></div>
+        <div class="row"><div class="time">11:00-14:30</div><div class="act">赤柱市场、美利楼、海滨散步与午饭。重点是坐下看海。</div><div class="cost">HK$350-500<em>交通午饭</em></div></div>
+        <div class="row"><div class="time">15:00+</div><div class="act">回中环后按体力机动：书店、叮叮车或直接回家。</div><div class="cost">HK$60-120<em>四人</em></div></div>
+        <div class="row"><div class="time">晚饭</div><div class="act">家附近清汤牛腩，回到日常质感。</div><div class="cost">HK$250-400<em>四人</em></div></div>
+        <div class="ticket-ribbon"><b>今日票据：</b>建议保留巴士票据，作为南区线纪念。</div>
+        <div class="day-total"><span>预计公共支出</span><strong>HK$660-1,100</strong></div>
+      </div>
+    </article>
+
+    <article class="card day-slide" data-day="6">
+      <div class="day-head">
+        <div class="day-num">31<small>MON AUG</small></div>
+        <div class="day-title">
+          <h3>留白与返程｜补漏 · 收拾 · 深圳</h3>
+          <div class="mood">不给最后一天塞景点，把从容留给家人。</div>
+        </div>
+      </div>
+      <div class="route"><b>路线</b> 家 → 最后采购 → 收拾行李 → 深圳</div>
+      <div class="day-body">
+        <div class="row"><div class="time">上午</div><div class="act">自然醒、早餐、收拾行李，核对证件与充电设备。</div><div class="cost">HK$0-100<em>家中附近</em></div></div>
+        <div class="row"><div class="time">中午前</div><div class="act">若前三天有遗漏，只补最重要的一项。</div><div class="cost">HK$0-300<em>不含购物</em></div></div>
+        <div class="row"><div class="time">下午</div><div class="act">按既定计划前往深圳。</div><div class="cost">不计入本港预算</div></div>
+        <div class="ticket-ribbon"><b>今日票据：</b>把七天票据按日期封装，回程后可直接做家庭旅行册。</div>
+        <div class="day-total"><span>预计公共支出</span><strong>HK$0-400</strong></div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section id="map">
+  <div class="section-title">
+    <span class="section-no">03</span>
+    <h2>真正港铁美食地图</h2>
+  </div>
+  <div class="card mtr-shell">
+    <p class="mtr-note">点击站点可查看该站的推荐店。内容均与本行程相关联，不做无关扩展。</p>
+    <div class="mtr-wrap">
+      <svg class="mtr-map" viewBox="0 0 960 360" xmlns="http://www.w3.org/2000/svg">
+        <rect width="960" height="360" fill="#fffaf2"/>
+        <line x1="90" y1="86" x2="860" y2="86" stroke="#245b65" stroke-width="8"/>
+        <line x1="450" y1="86" x2="450" y2="282" stroke="#245b65" stroke-width="8"/>
+        <line x1="450" y1="282" x2="860" y2="282" stroke="#245b65" stroke-width="8"/>
+
+        <g class="mtr-stop active" data-panel="s-kt" transform="translate(90 86)"><circle r="11"/><text y="30" text-anchor="middle">坚尼地城</text></g>
+        <g class="mtr-stop" data-panel="s-cen" transform="translate(180 86)"><circle r="11"/><text y="30" text-anchor="middle">中环</text></g>
+        <g class="mtr-stop" data-panel="s-adm" transform="translate(270 86)"><circle r="11"/><text y="30" text-anchor="middle">金钟</text></g>
+        <g class="mtr-stop" data-panel="s-wc" transform="translate(360 86)"><circle r="11"/><text y="30" text-anchor="middle">湾仔</text></g>
+        <g class="mtr-stop" data-panel="s-cwb" transform="translate(450 86)"><circle r="11"/><text y="30" text-anchor="middle">铜锣湾</text></g>
+        <g class="mtr-stop" data-panel="s-np" transform="translate(540 86)"><circle r="11"/><text y="30" text-anchor="middle">北角</text></g>
+        <g class="mtr-stop" data-panel="s-swh" transform="translate(630 86)"><circle r="11"/><text y="30" text-anchor="middle">西湾河</text></g>
+        <g class="mtr-stop" data-panel="s-skp" transform="translate(720 86)"><circle r="11"/><text y="30" text-anchor="middle">鲗鱼涌</text></g>
+        <g class="mtr-stop" data-panel="s-qb" transform="translate(810 86)"><circle r="11"/><text y="30" text-anchor="middle">鰂鱼涌转线</text></g>
+
+        <g class="mtr-stop" data-panel="s-tst" transform="translate(450 172)"><circle r="11"/><text y="30" text-anchor="middle">尖沙咀</text></g>
+        <g class="mtr-stop" data-panel="s-ymt" transform="translate(450 228)"><circle r="11"/><text y="30" text-anchor="middle">油麻地</text></g>
+        <g class="mtr-stop" data-panel="s-mk" transform="translate(450 282)"><circle r="11"/><text y="30" text-anchor="middle">旺角</text></g>
+
+        <g class="mtr-stop" data-panel="s-pe" transform="translate(540 282)"><circle r="11"/><text y="30" text-anchor="middle">太子</text></g>
+        <g class="mtr-stop" data-panel="s-ssp" transform="translate(630 282)"><circle r="11"/><text y="30" text-anchor="middle">深水埗</text></g>
+        <g class="mtr-stop" data-panel="s-dh" transform="translate(720 282)"><circle r="11"/><text y="30" text-anchor="middle">钻石山</text></g>
+        <g class="mtr-stop" data-panel="s-wks" transform="translate(810 282)"><circle r="11"/><text y="30" text-anchor="middle">黄大仙</text></g>
+      </svg>
+    </div>
+
+    <div id="s-kt" class="station-panel on"><b>坚尼地城</b>｜建议：诚记西多士、沙爹牛。适合抵达日轻松开场。</div>
+    <div id="s-cen" class="station-panel"><b>中环</b>｜建议：胜香园（茄牛通）、Quinary。适合26日中段休整。</div>
+    <div id="s-adm" class="station-panel"><b>金钟</b>｜建议：转场补水点，优先效率餐。</div>
+    <div id="s-wc" class="station-panel"><b>湾仔</b>｜建议：Samsen、肠粉王、金凤。适合夜间收尾。</div>
+    <div id="s-cwb" class="station-panel"><b>铜锣湾</b>｜建议：荣记粉面、聪嫂、DONKI熟食区。购物日核心。</div>
+    <div id="s-np" class="station-panel"><b>北角</b>｜建议：蛋挞与街头面包店，作为机动补位。</div>
+    <div id="s-swh" class="station-panel"><b>西湾河</b>｜建议：初遇台湾菜，抵达日晚饭优先位。</div>
+    <div id="s-skp" class="station-panel"><b>鲗鱼涌</b>｜建议：咖啡轻食与回程补给。</div>
+    <div id="s-qb" class="station-panel"><b>鰂鱼涌转线</b>｜建议：站内快速换线，不做停留。</div>
+    <div id="s-tst" class="station-panel"><b>尖沙咀</b>｜建议：Owls、两草、吉士挞。配合维港夜景。</div>
+    <div id="s-ymt" class="station-panel"><b>油麻地</b>｜建议：嘉多娜（16:30）、通达食店。</div>
+    <div id="s-mk" class="station-panel"><b>旺角</b>｜建议：鸡蛋仔、曲奇四重奏、街头小吃。</div>
+    <div id="s-pe" class="station-panel"><b>太子</b>｜建议：书店与CD店后可转深水埗。</div>
+    <div id="s-ssp" class="station-panel"><b>深水埗</b>｜新增重点：公和荳品厂（热豆浆、豆腐花）+ 坚记新香园。</div>
+    <div id="s-dh" class="station-panel"><b>钻石山</b>｜建议：园林段后简餐，避免久排。</div>
+    <div id="s-wks" class="station-panel"><b>黄大仙</b>｜建议：宗教与街区体验优先，餐饮机动。</div>
+  </div>
+</section>
+
+<section id="food">
+  <div class="section-title">
+    <span class="section-no">04</span>
+    <h2>美食双模式</h2>
+    <span class="section-side">离线图库：统一 4:3 比例，避免图片裂开</span>
+  </div>
+
+  <div class="switch">
+    <button class="on" data-view="by-station">按地铁站</button>
+    <button data-view="by-type">按品类</button>
+  </div>
+
+  <div id="by-station" class="view on">
+    <div class="food-grid" id="station-grid"></div>
+  </div>
+
+  <div id="by-type" class="view">
+    <div class="food-grid" id="type-grid"></div>
+  </div>
+</section>
+
+<section id="top">
+  <div class="section-title">
+    <span class="section-no">05</span>
+    <h2>编辑部 Top 12</h2>
+  </div>
+  <div class="food-grid" id="top-grid"></div>
+</section>
+
+<section id="food-table">
+  <div class="section-title">
+    <span class="section-no">06</span>
+    <h2>吃什么：按路线，不按榜单</h2>
+  </div>
+  <table class="food-table">
+    <tr><th>优先级</th><th>食物 / 餐</th><th>放在哪一天最合理</th><th>四人预算</th></tr>
+    <tr><td class="priority">★★★★★</td><td>FreshFarm 牛排</td><td class="home">29日晚 楼下正式晚餐</td><td>HK$550-600</td></tr>
+    <tr><td class="priority">★★★★★</td><td>Sushiro 寿司</td><td class="home">机动预约，上环或顺路分店</td><td>HK$400-550</td></tr>
+    <tr><td class="priority">★★★★★</td><td>清汤牛腩</td><td class="home">30日晚 家附近</td><td>HK$250-400</td></tr>
+    <tr><td class="priority">★★★★★</td><td>蛋挞</td><td>26日尖沙咀夜景后</td><td>HK$40-100</td></tr>
+    <tr><td class="priority">★★★★★</td><td>车仔面</td><td>27日油尖旺主线</td><td>HK$180-300</td></tr>
+    <tr><td class="priority">★★★★</td><td>公和荳品厂豆浆/豆腐花</td><td>27日太子后转深水埗</td><td>HK$40-100</td></tr>
+    <tr><td class="priority">★★★★</td><td>初遇台湾菜</td><td>25日晚抵达后</td><td>HK$350-500</td></tr>
+    <tr><td class="priority">★★★★</td><td>鸡蛋仔</td><td>27日旺角扫街</td><td>HK$40-80</td></tr>
+    <tr><td>★★★</td><td>焦糖炖蛋泡芙</td><td>26或29日，按站点机动</td><td>HK$60-120</td></tr>
+    <tr><td>★★★</td><td>豆浆冰淇淋</td><td>27日或29日机动</td><td>HK$50-100</td></tr>
+    <tr><td>★★★</td><td>麦当劳 + 奶昔</td><td>28日购物高强度时段</td><td>HK$150-220</td></tr>
+  </table>
+</section>
+
+<section id="stamp">
+  <div class="section-title">
+    <span class="section-no">07</span>
+    <h2>打卡系统</h2>
+  </div>
+  <div class="card checklist">
+    <p>勾选自动保存到本地，关掉浏览器后仍会保留。</p>
+    <div class="check"><input type="checkbox" id="c1"><label for="c1">胜香园（中环）</label></div>
+    <div class="check"><input type="checkbox" id="c2"><label for="c2">嘉多娜（油麻地）</label></div>
+    <div class="check"><input type="checkbox" id="c3"><label for="c3">坚记新香园（深水埗）</label></div>
+    <div class="check"><input type="checkbox" id="c4"><label for="c4">公和荳品厂（深水埗热豆浆/豆腐花）</label></div>
+    <div class="check"><input type="checkbox" id="c5"><label for="c5">Owls（尖沙咀）</label></div>
+    <div class="check"><input type="checkbox" id="c6"><label for="c6">Samsen（湾仔）</label></div>
+    <div class="check"><input type="checkbox" id="c7"><label for="c7">曲奇四重奏（伴手礼）</label></div>
+    <div class="check"><input type="checkbox" id="c8"><label for="c8">荣记粉面（铜锣湾）</label></div>
+    <div class="check"><input type="checkbox" id="c9"><label for="c9">FreshFarm 牛排（29日晚）</label></div>
+    <div class="check"><input type="checkbox" id="c10"><label for="c10">清汤牛腩（30日晚）</label></div>
+
+    <div class="badge-strip">
+      <div class="badge-card"><b>电车票章</b>在港岛线搭一次叮叮车</div>
+      <div class="badge-card"><b>天星票章</b>完成一次维港过海</div>
+      <div class="badge-card"><b>豆浆章</b>公和荳品厂完成打卡</div>
+      <div class="badge-card"><b>故宫章</b>29日文化线完成</div>
+    </div>
+  </div>
+</section>
+
+<section id="budget">
+  <div class="section-title">
+    <span class="section-no">08</span>
+    <h2>预算：四人出行的务实版本</h2>
+  </div>
+  <div class="budget">
+    <div class="card">
+      <div class="sub">香港 8/25-8/31 · 四人 · 不含购物 / 住宿 / 深圳段</div>
+      <div class="big">HK$5,000-6,500</div>
+      <p class="sub">保留你原有预算区间，购物独立核算，公共旅费单独记账。</p>
+      <div class="bar"><i style="width:56%"></i></div>
+      <div class="budget-list">
+        <div><span>外食 + 甜品</span><b>HK$3,000-3,800</b></div>
+        <div><span>家中早餐与补给</span><b>HK$700-1,000</b></div>
+        <div><span>交通</span><b>HK$700-1,000</b></div>
+        <div><span>香港故宫</span><b>HK$1,000</b></div>
+        <div><span>其他小额支出</span><b>HK$200-500</b></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="sub">单项最高预算</div>
+      <div class="big">HK$1,000</div>
+      <p>香港故宫按四位成人估算：HK$250 x 4。实际票价以官方当日信息为准。</p>
+      <div class="note">文化日建议只做故宫与海滨，不再叠加多个收费景点。</div>
+      <div class="note warn"><b>重要：</b>FreshFarm、甜品与车仔面受点单数量影响波动较大，建议每天记一次流水。</div>
+    </div>
+  </div>
+</section>
+
+<section id="rules">
+  <div class="section-title">
+    <span class="section-no">09</span>
+    <h2>执行原则</h2>
+  </div>
+  <details open><summary>① 不再追加西贡、长洲、南丫岛</summary><p>已有太平山、坚尼地城、赤柱、西九海滨，继续叠加海岛会造成题材重复与体力透支。</p></details>
+  <details open><summary>② 26日与27日彻底换场</summary><p>26日港岛山海，27日九龙旧城，避免连续两天在中环/上环附近回旋。</p></details>
+  <details open><summary>③ 孙中山遗址作为机动点</summary><p>这是兴趣点，不必单独开半天，可放在30日回中环后按体力补位。</p></details>
+  <details open><summary>④ 购物日就是购物日</summary><p>28日不混故宫、徒步和海边线，提升家庭出行体验和执行稳定性。</p></details>
+  <details open><summary>⑤ 深水埗豆浆店已加入主线</summary><p>公和荳品厂已并入27日动线与地图系统，避免新增店铺造成额外跨区折返。</p></details>
+</section>
+
+<div class="footer">
+  香港之旅 2026.08.25-08.31 城市旅行特刊（在线图片版）<br>
+  图片为在线加载，建议在网络稳定环境下浏览。
+</div>
+
+</div>
+
+<script>
+(function () {
+  const foodData = [
+    { name: "胜香园", station: "中环", type: "茶餐厅", sig: "茄牛通", score: 5, day: "26" },
+    { name: "Quinary", station: "中环", type: "酒吧", sig: "创意鸡尾酒", score: 4, day: "26" },
+    { name: "诚记", station: "坚尼地城", type: "茶餐厅", sig: "西多士", score: 4, day: "25" },
+    { name: "金凤", station: "湾仔", type: "茶餐厅", sig: "奶茶", score: 4, day: "26" },
+    { name: "Samsen", station: "湾仔", type: "泰国菜", sig: "虎虾炒粉", score: 5, day: "28" },
+    { name: "荣记粉面", station: "铜锣湾", type: "粉面", sig: "牛腩面", score: 4, day: "28" },
+    { name: "聪嫂", station: "铜锣湾", type: "甜品", sig: "芒果甜品", score: 4, day: "28" },
+    { name: "VISSION", station: "铜锣湾", type: "甜品", sig: "冰淇淋", score: 3, day: "28" },
+    { name: "DONKI 熟食", station: "铜锣湾", type: "轻食", sig: "便当", score: 3, day: "28" },
+    { name: "Owls", station: "尖沙咀", type: "甜品", sig: "焦糖炖蛋泡芙", score: 5, day: "26" },
+    { name: "两草", station: "尖沙咀", type: "甜品", sig: "吉士挞", score: 4, day: "26" },
+    { name: "Rosewood 吉士挞", station: "尖沙咀", type: "甜品", sig: "吉士挞", score: 4, day: "26" },
+    { name: "嘉多娜", station: "油麻地", type: "面包店", sig: "布甸包", score: 5, day: "27" },
+    { name: "通达食店", station: "油麻地", type: "粉面", sig: "车仔面", score: 5, day: "27" },
+    { name: "庙街串烧", station: "油麻地", type: "小吃", sig: "夜宵串烧", score: 4, day: "27" },
+    { name: "明华饼家", station: "旺角", type: "面包店", sig: "港式面包", score: 4, day: "27" },
+    { name: "曲奇四重奏", station: "旺角", type: "伴手礼", sig: "曲奇礼盒", score: 4, day: "27" },
+    { name: "贵香园", station: "旺角", type: "小吃", sig: "街头小吃", score: 3, day: "27" },
+    { name: "豆蔻年华", station: "太子", type: "甜品", sig: "豆乳甜品", score: 4, day: "27" },
+    { name: "坚记新香园", station: "深水埗", type: "茶餐厅", sig: "蛋牛治", score: 5, day: "27" },
+    { name: "公和荳品厂", station: "深水埗", type: "豆品店", sig: "热豆浆", score: 5, day: "27" },
+    { name: "公和荳品厂", station: "深水埗", type: "豆品店", sig: "豆腐花", score: 5, day: "27" },
+    { name: "鸿记凉茶", station: "深水埗", type: "凉茶", sig: "草本凉茶", score: 4, day: "27" },
+    { name: "初遇台湾菜", station: "西湾河", type: "台湾菜", sig: "乌醋猪软骨", score: 4, day: "25" },
+    { name: "Sushiro", station: "上环", type: "寿司", sig: "寿司拼盘", score: 5, day: "机动" },
+    { name: "FreshFarm", station: "家附近", type: "西餐", sig: "牛排", score: 5, day: "29" },
+    { name: "清汤牛腩", station: "家附近", type: "粉面", sig: "清汤牛腩", score: 5, day: "30" },
+    { name: "丹麦饼店", station: "铜锣湾", type: "面包店", sig: "猪扒包", score: 4, day: "28" },
+    { name: "蛋挞铺", station: "尖沙咀", type: "甜品", sig: "港式蛋挞", score: 5, day: "26" },
+    { name: "鸡蛋仔档", station: "旺角", type: "小吃", sig: "鸡蛋仔", score: 4, day: "27" },
+    { name: "豆浆冰淇淋", station: "深水埗", type: "甜品", sig: "豆浆口味", score: 3, day: "27" },
+    { name: "南记粉面", station: "湾仔", type: "粉面", sig: "叻沙", score: 4, day: "机动" },
+    { name: "肠粉王", station: "湾仔", type: "粉面", sig: "鲜虾肠粉", score: 4, day: "26" },
+    { name: "肠粉皇", station: "旺角", type: "粉面", sig: "酱香肠粉", score: 3, day: "27" },
+    { name: "麦当劳", station: "铜锣湾", type: "轻食", sig: "奶昔", score: 3, day: "28" },
+    { name: "太安楼小食", station: "西湾河", type: "小吃", sig: "综合小吃", score: 3, day: "25" },
+    { name: "西九咖啡", station: "西九", type: "咖啡", sig: "冷萃", score: 3, day: "29" },
+    { name: "赤柱海边餐", station: "赤柱", type: "海边餐厅", sig: "简餐", score: 3, day: "30" },
+    { name: "书店咖啡", station: "太子", type: "咖啡", sig: "黑咖", score: 3, day: "27" },
+    { name: "中环街市小食", station: "中环", type: "小吃", sig: "港式拼盘", score: 3, day: "26" },
+    { name: "北角蛋卷", station: "北角", type: "伴手礼", sig: "手工蛋卷", score: 3, day: "机动" },
+    { name: "山顶热饮", station: "太平山", type: "轻食", sig: "热奶茶", score: 3, day: "26" },
+    { name: "码头奶茶", station: "天星", type: "轻食", sig: "冻奶茶", score: 3, day: "26" }
+  ];
+
+  const topList = [
+    "胜香园", "坚记新香园", "嘉多娜", "Owls", "Samsen", "公和荳品厂", "FreshFarm", "清汤牛腩", "通达食店", "蛋挞铺", "初遇台湾菜", "Sushiro"
+  ];
+
+  const PHOTO_POOL = [
+    "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1526318896980-cf78c088247c?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1516684732162-798a0062be99?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=900&q=80"
+  ];
+
+  function hashKey(text) {
+    let h = 0;
+    for (let i = 0; i < text.length; i += 1) {
+      h = ((h << 5) - h) + text.charCodeAt(i);
+      h |= 0;
+    }
+    return Math.abs(h);
+  }
+
+  function makePlate(item) {
+    const key = item.name + "|" + item.station + "|" + item.type + "|" + item.sig;
+    return PHOTO_POOL[hashKey(key) % PHOTO_POOL.length];
+  }
+
+  function stars(score) {
+    return "★".repeat(score) + "☆".repeat(Math.max(0, 5 - score));
+  }
+
+  function cardHTML(item) {
+    const plate = makePlate(item);
+    const fallback = PHOTO_POOL[0];
+    return "<article class='card food-card'>"
+      + "<img class='photo' src='" + plate + "' alt='" + item.name + "' loading='lazy' referrerpolicy='no-referrer' onerror=\"this.onerror=null;this.src='" + fallback + "';\"/>"
+      + "<div class='food-body'>"
+      + "<h3>" + item.name + "</h3>"
+      + "<p class='meta-line'><span class='tag'>" + item.station + "</span><span class='tag'>" + item.type + "</span><span class='tag'>D" + item.day + "</span></p>"
+      + "<p class='meta-line'><span class='score'>" + stars(item.score) + "</span> · 推荐：" + item.sig + "</p>"
+      + "</div>"
+      + "</article>";
+  }
+
+  function renderStationGrid() {
+    const groups = {};
+    foodData.forEach((f) => {
+      if (!groups[f.station]) groups[f.station] = [];
+      groups[f.station].push(f);
+    });
+
+    const order = ["坚尼地城", "中环", "金钟", "湾仔", "铜锣湾", "北角", "西湾河", "尖沙咀", "油麻地", "旺角", "太子", "深水埗", "钻石山", "黄大仙", "西九", "赤柱", "家附近", "上环", "天星", "太平山"];
+    const keys = Object.keys(groups).sort((a, b) => {
+      const ia = order.indexOf(a);
+      const ib = order.indexOf(b);
+      if (ia === -1 && ib === -1) return a.localeCompare(b, "zh-CN");
+      if (ia === -1) return 1;
+      if (ib === -1) return -1;
+      return ia - ib;
+    });
+
+    let html = "";
+    keys.forEach((k) => {
+      const list = groups[k];
+      html += "<article class='card' style='padding:12px'>"
+        + "<h3 style='margin:0 0 8px;font-size:18px'>" + k + " · " + list.length + " 家</h3>"
+        + "<div class='food-grid'>"
+        + list.map(cardHTML).join("")
+        + "</div>"
+        + "</article>";
+    });
+    document.getElementById("station-grid").innerHTML = html;
+  }
+
+  function renderTypeGrid() {
+    const groups = {};
+    foodData.forEach((f) => {
+      if (!groups[f.type]) groups[f.type] = [];
+      groups[f.type].push(f);
+    });
+    const keys = Object.keys(groups).sort((a, b) => groups[b].length - groups[a].length);
+    let html = "";
+    keys.forEach((k) => {
+      const list = groups[k];
+      html += "<article class='card' style='padding:12px'>"
+        + "<h3 style='margin:0 0 8px;font-size:18px'>" + k + " · " + list.length + " 家</h3>"
+        + "<div class='food-grid'>"
+        + list.map(cardHTML).join("")
+        + "</div>"
+        + "</article>";
+    });
+    document.getElementById("type-grid").innerHTML = html;
+  }
+
+  function renderTopGrid() {
+    const list = topList.map((name) => foodData.find((f) => f.name === name)).filter(Boolean);
+    document.getElementById("top-grid").innerHTML = list.map(cardHTML).join("");
+  }
+
+  function setupSwitch() {
+    const buttons = document.querySelectorAll(".switch button");
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        buttons.forEach((b) => b.classList.remove("on"));
+        btn.classList.add("on");
+        const target = btn.dataset.view;
+        document.querySelectorAll(".view").forEach((v) => v.classList.remove("on"));
+        const view = document.getElementById(target);
+        if (view) view.classList.add("on");
+      });
+    });
+  }
+
+  function setupMtrMap() {
+    const stops = document.querySelectorAll(".mtr-stop");
+    const panels = document.querySelectorAll(".station-panel");
+    stops.forEach((s) => {
+      s.addEventListener("click", () => {
+        stops.forEach((x) => x.classList.remove("active"));
+        panels.forEach((p) => p.classList.remove("on"));
+        s.classList.add("active");
+        const id = s.dataset.panel;
+        const panel = document.getElementById(id);
+        if (panel) panel.classList.add("on");
+      });
+    });
+  }
+
+  function setupDayExpand() {
+    const key = "hk_premium_days_v1";
+    const slides = document.querySelectorAll(".day-slide");
+
+    function saveState() {
+      const state = [];
+      slides.forEach((s) => state.push(s.classList.contains("expanded")));
+      localStorage.setItem(key, JSON.stringify(state));
+    }
+
+    function loadState() {
+      try {
+        const raw = localStorage.getItem(key);
+        if (!raw) return false;
+        const state = JSON.parse(raw);
+        slides.forEach((s, i) => {
+          if (state[i]) s.classList.add("expanded");
+          else s.classList.remove("expanded");
+        });
+        return true;
+      } catch (e) {
+        return false;
+      }
+    }
+
+    slides.forEach((s, i) => {
+      const head = s.querySelector(".day-head");
+      if (!head) return;
+      head.addEventListener("click", () => {
+        s.classList.toggle("expanded");
+        saveState();
+      });
+      if (i > 0) s.classList.remove("expanded");
+    });
+
+    if (!loadState()) {
+      slides.forEach((s, i) => {
+        if (i === 0) s.classList.add("expanded");
+        else s.classList.remove("expanded");
+      });
+    }
+  }
+
+  function setupChecklist() {
+    const key = "hk_premium_checklist_v1";
+    const boxes = document.querySelectorAll(".check input[type=checkbox]");
+    try {
+      const raw = localStorage.getItem(key);
+      if (raw) {
+        const arr = JSON.parse(raw);
+        boxes.forEach((b, i) => {
+          if (arr[i]) b.checked = true;
+        });
+      }
+    } catch (e) {}
+
+    function save() {
+      const arr = [];
+      boxes.forEach((b) => arr.push(b.checked));
+      localStorage.setItem(key, JSON.stringify(arr));
+    }
+
+    boxes.forEach((b) => b.addEventListener("change", save));
+  }
+
+  renderStationGrid();
+  renderTypeGrid();
+  renderTopGrid();
+  setupSwitch();
+  setupMtrMap();
+  setupDayExpand();
+  setupChecklist();
+})();
+</script>
+</body>
+</html>
